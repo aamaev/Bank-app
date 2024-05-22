@@ -18,6 +18,10 @@
 		09ECC85F2BFCB5FC006A0B27 /* ColorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09ECC85E2BFCB5FC006A0B27 /* ColorCell.swift */; };
 		09ECC8612BFCB623006A0B27 /* IconCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09ECC8602BFCB623006A0B27 /* IconCell.swift */; };
 		09ECC8642BFCC8ED006A0B27 /* UILabel.extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09ECC8632BFCC8ED006A0B27 /* UILabel.extension.swift */; };
+		09ECC8672BFDC919006A0B27 /* AuthHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09ECC8662BFDC919006A0B27 /* AuthHeaderView.swift */; };
+		09ECC86A2BFDCC9B006A0B27 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09ECC8692BFDCC9B006A0B27 /* LoginController.swift */; };
+		09ECC86C2BFDCFB4006A0B27 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09ECC86B2BFDCFB4006A0B27 /* CustomTextField.swift */; };
+		09ECC86E2BFDD7F0006A0B27 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09ECC86D2BFDD7F0006A0B27 /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		09ECC85E2BFCB5FC006A0B27 /* ColorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCell.swift; sourceTree = "<group>"; };
 		09ECC8602BFCB623006A0B27 /* IconCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconCell.swift; sourceTree = "<group>"; };
 		09ECC8632BFCC8ED006A0B27 /* UILabel.extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.extension.swift; sourceTree = "<group>"; };
+		09ECC8662BFDC919006A0B27 /* AuthHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHeaderView.swift; sourceTree = "<group>"; };
+		09ECC8692BFDCC9B006A0B27 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		09ECC86B2BFDCFB4006A0B27 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		09ECC86D2BFDD7F0006A0B27 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,13 +74,11 @@
 		09ECC8402BFC965F006A0B27 /* bankApp */ = {
 			isa = PBXGroup;
 			children = (
+				09ECC8452BFC965F006A0B27 /* ViewController.swift */,
+				09ECC8692BFDCC9B006A0B27 /* LoginController.swift */,
 				09ECC8562BFC96F3006A0B27 /* View */,
 				09ECC8552BFC96E9006A0B27 /* Extension */,
-				09ECC8412BFC965F006A0B27 /* AppDelegate.swift */,
-				09ECC8432BFC965F006A0B27 /* SceneDelegate.swift */,
-				09ECC8452BFC965F006A0B27 /* ViewController.swift */,
-				09ECC84A2BFC9660006A0B27 /* Assets.xcassets */,
-				09ECC84C2BFC9660006A0B27 /* LaunchScreen.storyboard */,
+				09ECC8652BFDC78B006A0B27 /* Supporting */,
 				09ECC84F2BFC9660006A0B27 /* Info.plist */,
 			);
 			path = bankApp;
@@ -92,6 +98,9 @@
 			children = (
 				09ECC8582BFC97AE006A0B27 /* ViewBuilder.swift */,
 				09ECC85A2BFC97E7006A0B27 /* ViewManager.swift */,
+				09ECC8662BFDC919006A0B27 /* AuthHeaderView.swift */,
+				09ECC86B2BFDCFB4006A0B27 /* CustomTextField.swift */,
+				09ECC86D2BFDD7F0006A0B27 /* CustomButton.swift */,
 				09ECC8572BFC9720006A0B27 /* Cell */,
 			);
 			path = View;
@@ -104,6 +113,17 @@
 				09ECC8602BFCB623006A0B27 /* IconCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		09ECC8652BFDC78B006A0B27 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				09ECC8412BFC965F006A0B27 /* AppDelegate.swift */,
+				09ECC8432BFC965F006A0B27 /* SceneDelegate.swift */,
+				09ECC84A2BFC9660006A0B27 /* Assets.xcassets */,
+				09ECC84C2BFC9660006A0B27 /* LaunchScreen.storyboard */,
+			);
+			path = Supporting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,12 +196,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09ECC86E2BFDD7F0006A0B27 /* CustomButton.swift in Sources */,
+				09ECC86A2BFDCC9B006A0B27 /* LoginController.swift in Sources */,
 				09ECC8462BFC965F006A0B27 /* ViewController.swift in Sources */,
 				09ECC8422BFC965F006A0B27 /* AppDelegate.swift in Sources */,
 				09ECC8612BFCB623006A0B27 /* IconCell.swift in Sources */,
+				09ECC8672BFDC919006A0B27 /* AuthHeaderView.swift in Sources */,
 				09ECC85F2BFCB5FC006A0B27 /* ColorCell.swift in Sources */,
 				09ECC85D2BFC9A6D006A0B27 /* UIColor.extension.swift in Sources */,
 				09ECC8642BFCC8ED006A0B27 /* UILabel.extension.swift in Sources */,
+				09ECC86C2BFDCFB4006A0B27 /* CustomTextField.swift in Sources */,
 				09ECC85B2BFC97E7006A0B27 /* ViewManager.swift in Sources */,
 				09ECC8592BFC97AE006A0B27 /* ViewBuilder.swift in Sources */,
 				09ECC8442BFC965F006A0B27 /* SceneDelegate.swift in Sources */,

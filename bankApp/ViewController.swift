@@ -15,8 +15,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor(hex: "#141414FF")
         
-        view.backgroundColor = UIColor(hex: "#141414FF")
         builder.setPageTitle(title: "Design your virtual card")
         builder.getCard()
         builder.getColorSlider()
