@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class HomeController: UIViewController {
     
     private lazy var builder = {
         return ViewBuilder(controller: self)

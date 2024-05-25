@@ -80,11 +80,16 @@ class LoginController: UIViewController {
     }
     
     @objc private func didTapSignIn() {
-        print("didTapSignIn")
+        let vc = HomeController()
+        
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: false, completion: nil)
     }
     
     @objc private func didTapNewUser() {
-        print("didTapNewUser")
+        let vc = RegisterController()
+        
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @objc private func didTapForgotPassword() {
